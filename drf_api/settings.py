@@ -13,7 +13,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 from pathlib import Path
 import os
 
-if os.path.exists('env.py'):
+if os.path.isfile('env.py'):
     import env
 
 CLOUDINARY_STORAGE = {
@@ -34,9 +34,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-6%h^negdceqqle)fsp6@h+=2x#&^+g_+o*82==x)bw^vm4r9)_'  # noqa
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = 'DEBUG' in os.environ
 
-ALLOWED_HOSTS = []
+
+ALLOWED_HOSTS = ['8000-rpf13-drfapi-7cth7c8zubh.ws-eu98.gitpod.io', 'localhost']  # noqa
 
 
 # Application definition
@@ -50,6 +51,8 @@ INSTALLED_APPS = [
     'cloudinary_storage',
     'django.contrib.staticfiles',
     'cloudinary',
+
+    'profiles',
 
 ]
 
