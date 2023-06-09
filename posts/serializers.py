@@ -23,10 +23,10 @@ class PostSerializer(serializers.ModelSerializer):
             raise serializers.ValidationError(
                 'Image with height larger than 4096px'
             )
-    return value
+        return value
 
     def get_is_owner(self, obj):
-        request = self.context('request')
+        request = self.context['request']
         return request.user == obj.owner
 
     class Meta:

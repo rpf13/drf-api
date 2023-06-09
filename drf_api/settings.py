@@ -37,7 +37,7 @@ SECRET_KEY = 'django-insecure-6%h^negdceqqle)fsp6@h+=2x#&^+g_+o*82==x)bw^vm4r9)_
 DEBUG = 'DEBUG' in os.environ
 
 
-ALLOWED_HOSTS = ['8000-rpf13-drfapi-7cth7c8zubh.ws-eu98.gitpod.io', 'localhost']  # noqa
+ALLOWED_HOSTS = ['8000-rpf13-drfapi-7cth7c8zubh.ws-eu99.gitpod.io', 'localhost']  # noqa
 
 
 # Application definition
