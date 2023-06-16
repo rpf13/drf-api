@@ -64,7 +64,7 @@ SECRET_KEY = os.getenv('SECRET_KEY')  # noqa
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEBUG' in os.environ
 
-ALLOWED_HOSTS = ['localhost', 'drf-rpf13-a9d0fbbfff0b.herokuapp.com']  # noqa
+ALLOWED_HOSTS = ['localhost', 'drf-rpf13-a9d0fbbfff0b.herokuapp.com', '8000-rpf13-drfapi-7cth7c8zubh.ws-eu99.gitpod.io']  # noqa
 
 
 # Application definition
