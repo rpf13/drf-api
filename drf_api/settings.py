@@ -64,7 +64,7 @@ SECRET_KEY = os.getenv('SECRET_KEY')  # noqa
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEBUG' in os.environ
 
-ALLOWED_HOSTS = ['localhost', 'drf-rpf13.herokuapp.com']  # noqa
+ALLOWED_HOSTS = ['localhost', 'drf-rpf13-a9d0fbbfff0b.herokuapp.com']  # noqa
 
 
 # Application definition
